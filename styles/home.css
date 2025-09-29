@@ -1,0 +1,32 @@
+.hero {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.greeting {
+  text-align: left;
+}
+
+.profile-pic {
+  height: auto;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 769px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .greeting {
+    font-size: 80%;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .profile-pic {
+    max-width: 150px;
+  }
+}

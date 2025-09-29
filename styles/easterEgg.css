@@ -1,0 +1,28 @@
+.artwork-project {
+  align-items: center;
+  display: flex;
+}
+
+.artwork-img {
+  border-radius: 10px;
+  margin: 16px;
+  max-width: 300px;
+}
+
+.artwork-img:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 769px) {
+  .artwork-project {
+    flex-direction: column;
+  }
+
+  .artwork-img {
+    max-width: 200px;
+  }
+
+  .artwork-img:hover {
+    transform: non;
+  }
+}

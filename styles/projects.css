@@ -1,0 +1,58 @@
+.gallery {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+}
+
+.project {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-name {
+  margin-top: 8px;
+}
+
+.project-img {
+  border-radius: 20px;
+  display: block;
+  height: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+}
+
+.easter-egg {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.easter-egg a,
+.easter-egg:visited {
+  color: #353133;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+.easter-egg a:hover {
+  color: #cf8ba9;
+}
+
+@media screen and (max-width: 769px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .project-img:hover {
+    transform: none;
+  }
+
+  .easter-egg {
+    line-height: 1;
+  }
+}

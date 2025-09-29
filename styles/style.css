@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background: #285252 url("../images/header-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", Arial, sans-serif;
+  height: 100%;
+  line-height: 1.8;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+p {
+  margin: 0;
+}
+
+.header {
+  align-items: end;
+  color: #fff5eb;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 32px 16px 32px;
+}
+
+.header__title {
+  color: #cf8ba9;
+  font-weight: 900;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  color: #fff5eb;
+  padding: 0px 16px;
+  text-decoration: none;
+}
+
+.active {
+  color: #cf8ba9;
+}
+
+.menu-item:hover {
+  transform: scale(1.2);
+}
+
+.main-container {
+  background-color: #fff5eb99;
+  border-radius: 20px;
+  color: #353133;
+  flex-grow: 1;
+  margin: 0px 32px;
+  overflow: auto;
+  padding: 0px 160px 16px 160px;
+}
+
+.home-title {
+  font-size: 2.5em;
+}
+
+.page-title {
+  font-size: 1.5em;
+  padding: 32px 16px 16px 48px;
+}
+
+.footer {
+  align-items: center;
+  color: #cf8ba9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+
+.bg-credit {
+  font-size: 0.5rem;
+}
+
+.bg-credit a,
+.bg-credit:visited {
+  color: #fff5eb;
+  text-decoration: none;
+}
+
+.bg-credit a:hover {
+  color: #cf8ba9;
+}
+
+@media screen and (max-width: 769px) {
+  .header {
+    align-items: center;
+    flex-direction: column;
+    padding: 24px 16px 8px;
+    text-align: center;
+  }
+
+  .header__title {
+    font-size: 2.5em;
+    margin-bottom: 16px;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 16px;
+  }
+
+  .menu-item {
+    padding: 8px;
+  }
+
+  .menu-item:hover {
+    transform: none;
+  }
+
+  .main-container {
+    margin: 16px 16px 0px;
+    padding: 16px;
+  }
+
+  .section-title {
+    font-size: 1.2em;
+    padding: 16px;
+  }
+}

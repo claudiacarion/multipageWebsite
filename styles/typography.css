@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins/Poppins-Black.woff2"),
+    url("Poppins-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url("../fonts/Quicksand/Quicksand-Regular.woff2"),
+    url("Quicksand-Regular.woff") format("woff");
+}
